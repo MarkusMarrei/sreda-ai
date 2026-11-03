@@ -48,6 +48,7 @@ pip-delete-this-directory.txt
 !frontend/assets/**
 !frontend/favicon.ico
 !reference_logo.png
+!docs/screenshots/**
 
 # User Credentials & Private Configuration
 # (Use backend/config/providers.json.example as template)

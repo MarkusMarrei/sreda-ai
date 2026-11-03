@@ -44,7 +44,7 @@ class HuggingFaceHub:
             pass
         return []
 
-    def get_repo_files(self, repo_id: str, available_ram_gb: float = 12.0):
+    def get_repo_files(self, repo_id: str, available_ram_gb: float = 8.0, total_ram_gb: float = 16.0):
         url = f"https://huggingface.co/api/models/{repo_id}/tree/main"
         files = []
         try:
@@ -54,19 +54,24 @@ class HuggingFaceHub:
                 for item in data:
                     path = item.get("path", "")
                     if path.lower().endswith(".gguf"):
-                        size = item.get("size", 0)
+                        size = item.get("size")
+                        if size is None or size == 0:
+                            lfs = item.get("lfs")
+                            if isinstance(lfs, dict):
+                                size = lfs.get("size", 0)
+                        size = int(size) if size else 0
                         size_mb = size / (1024 * 1024)
                         size_text = f"{size_mb / 1024:.2f} ГБ" if size_mb >= 1024 else f"{size_mb:.0f} МБ"
                         download_url = f"https://huggingface.co/{repo_id}/resolve/main/{path}"
 
                         # Compatibility check
                         size_gb = round(size / (1024 ** 3), 2)
-                        req_ram_gb = size_gb * 1.2
-                        if req_ram_gb <= available_ram_gb:
+                        req_ram_gb = round(size_gb * 1.25, 2)
+                        if req_ram_gb <= (total_ram_gb * 0.70):
                             compat = "recommended"
                             compat_text = "Рекомендуется"
                             is_compatible = True
-                        elif req_ram_gb <= available_ram_gb * 1.25:
+                        elif req_ram_gb <= (total_ram_gb * 0.90):
                             compat = "warning"
                             compat_text = "Внимание (высокая нагрузка)"
                             is_compatible = True
@@ -81,6 +86,7 @@ class HuggingFaceHub:
                             "size_bytes": size,
                             "size_gb": size_gb,
                             "size_text": size_text,
+                            "req_ram_gb": req_ram_gb,
                             "download_url": download_url,
                             "compatibility": compat,
                             "compatibility_text": compat_text,
