@@ -234,7 +234,11 @@ def api_hf_search(q: str = "gguf"):
 @app.get("/api/models/hf/repo_files")
 def api_hf_repo_files(repo_id: str):
     mem = get_memory_info()
-    return hf_hub.get_repo_files(repo_id, available_ram_gb=mem["available_ram_gb"])
+    return hf_hub.get_repo_files(
+        repo_id,
+        available_ram_gb=mem.get("available_ram_gb", 8.0),
+        total_ram_gb=mem.get("total_ram_gb", 16.0)
+    )
 
 class DownloadReq(BaseModel):
     url: str

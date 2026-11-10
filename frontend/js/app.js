@@ -409,7 +409,7 @@
         "labelSpeed": "Скорость инференса:",
         "unitTokensSec": "т/с",
         "btnDownload": "Скачать",
-        "btnActivate": "Активировать",
+        "btnActivate": "Запустить в движок",
         "btnInstalled": "Установлена",
         "installedEmpty": "В папках моделей пока нет файлов .gguf.<br>Скачайте тернарную модель из вкладки <b>«Линейка Bonsai 2»</b> или найдите на <b>Hugging Face</b>.",
         "sredaBoostTitle": "SREDA Boost — Игровой режим ресурсов",
@@ -482,7 +482,32 @@
         },
         "badgeCompatible": "Совместимо",
         "badgeHighLoad": "Высокая нагрузка",
-        "badgeExceedsRam": "Превышает RAM"
+        "badgeExceedsRam": "Превышает RAM",
+        "start": "Запустить",
+        "btnDelete": "Удалить",
+        "btnDeleteTitle": "Удалить файл модели с диска",
+        "modelNotSelected": "Модель не выбрана",
+        "engineRunningTooltip": "Модель загружена в VRAM. Нажмите, чтобы выгрузить и освободить память",
+        "engineStartingTooltip": "Инициализация VRAM и запуск llama-server...",
+        "engineStoppedTooltip": "Движок выгружен. Нажмите, чтобы запустить модель в VRAM",
+        "radarReady": "Модель готова: ",
+        "radarStandby": "Движок ожидает запрос (автозапуск при отправке)",
+        "radarStopped": "Движок остановлен",
+        "radarApi": "Облачная модель активна: ",
+        "toastStartingModel": "Запуск модели в llama-server...",
+        "toastModelActivated": "Модель активирована!",
+        "toastModelStartError": "Ошибка запуска модели: ",
+        "toastUnloadingModel": "Выгрузка модели и освобождение памяти (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ Модель успешно выгружена из памяти",
+        "toastModelUnloadError": "Ошибка выгрузки модели: ",
+        "toastSelectModelFirst": "Выберите модель в каталоге для запуска",
+        "toastApiModelInfo": "работает через API (без расхода VRAM). Для смены откройте Каталог.",
+        "toastModelDeleting": "Удаление модели...",
+        "toastModelDeleted": "✓ Модель успешно удалена с диска",
+        "toastDeleteError": "Ошибка удаления: ",
+        "deleteConfirm": "Вы действительно хотите удалить модель:\n\n\"{name}\" ({size} ГБ)?\n\nФайл будет удален с диска безвозвратно.",
+        "deleteModelActiveWarning": "\nВнимание: эта модель сейчас активна. Инференс будет выгружен из памяти.",
+        "noInstalledModels": "В папках моделей пока нет файлов .gguf.<br>Скачайте тернарную модель из вкладки <b>«Линейка Bonsai 2»</b> или найдите на <b>Hugging Face</b>."
     },
     "en": {
         "defaultUserName": "User",
@@ -622,7 +647,7 @@
         "labelSpeed": "Inference Speed:",
         "unitTokensSec": "t/s",
         "btnDownload": "Download",
-        "btnActivate": "Activate",
+        "btnActivate": "Launch Engine",
         "btnInstalled": "Installed",
         "installedEmpty": "No .gguf model files in models directories yet.<br>Download a ternary model from <b>«Bonsai 2 Family»</b> or find on <b>Hugging Face</b>.",
         "sredaBoostTitle": "SREDA Boost — Game Mode Optimization",
@@ -695,7 +720,32 @@
         },
         "badgeCompatible": "Compatible",
         "badgeHighLoad": "High Load",
-        "badgeExceedsRam": "Exceeds RAM"
+        "badgeExceedsRam": "Exceeds RAM",
+        "start": "Launch",
+        "btnDelete": "Delete",
+        "btnDeleteTitle": "Delete model file from disk",
+        "modelNotSelected": "No model selected",
+        "engineRunningTooltip": "Model loaded in VRAM. Click to unload and free memory",
+        "engineStartingTooltip": "Initializing VRAM and launching llama-server...",
+        "engineStoppedTooltip": "Engine is stopped. Click to launch model into VRAM",
+        "radarReady": "Model ready: ",
+        "radarStandby": "Engine in standby (auto-launches on prompt)",
+        "radarStopped": "Engine stopped",
+        "radarApi": "Cloud model active: ",
+        "toastStartingModel": "Launching model in llama-server...",
+        "toastModelActivated": "Model activated!",
+        "toastModelStartError": "Failed to launch model: ",
+        "toastUnloadingModel": "Unloading model and freeing memory (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ Model successfully unloaded from memory",
+        "toastModelUnloadError": "Failed to unload model: ",
+        "toastSelectModelFirst": "Please select a model in the catalog to launch",
+        "toastApiModelInfo": "runs via cloud API (zero VRAM usage). Open Catalog to switch.",
+        "toastModelDeleting": "Deleting model...",
+        "toastModelDeleted": "✓ Model successfully deleted from disk",
+        "toastDeleteError": "Deletion failed: ",
+        "deleteConfirm": "Are you sure you want to delete model:\n\n\"{name}\" ({size} GB)?\n\nFile will be permanently deleted from disk.",
+        "deleteModelActiveWarning": "\nWarning: this model is currently active. Inference will be unloaded from memory.",
+        "noInstalledModels": "No .gguf model files found.<br>Download a ternary model from <b>\"Bonsai 2 Family\"</b> or search on <b>Hugging Face</b>."
     },
     "de": {
         "defaultUserName": "Benutzer",
@@ -835,7 +885,7 @@
         "labelSpeed": "Inferenzgeschwindigkeit:",
         "unitTokensSec": "t/s",
         "btnDownload": "Herunterladen",
-        "btnActivate": "Aktivieren",
+        "btnActivate": "In Engine starten",
         "btnInstalled": "Installiert",
         "installedEmpty": "Noch keine .gguf-Modelldateien in den Modellordnern.<br>Laden Sie ein ternäres Modell aus dem Tab <b>«Bonsai 2-Familie»</b> herunter oder suchen Sie auf <b>Hugging Face</b>.",
         "sredaBoostTitle": "SREDA Boost — Spielmodus-Ressourcenoptimierung",
@@ -908,7 +958,32 @@
         },
         "badgeCompatible": "Kompatibel",
         "badgeHighLoad": "Hohe Auslastung",
-        "badgeExceedsRam": "Übersteigt RAM"
+        "badgeExceedsRam": "Übersteigt RAM",
+        "start": "Starten",
+        "btnDelete": "Löschen",
+        "btnDeleteTitle": "Modelldatei von der Festplatte löschen",
+        "modelNotSelected": "Kein Modell ausgewählt",
+        "engineRunningTooltip": "Modell im VRAM geladen. Klicken, um Speicher freizugeben",
+        "engineStartingTooltip": "VRAM wird initialisiert und llama-server gestartet...",
+        "engineStoppedTooltip": "Engine ist gestoppt. Klicken, um Modell im VRAM zu starten",
+        "radarReady": "Modell bereit: ",
+        "radarStandby": "Engine im Standby (automatischer Start bei Eingabe)",
+        "radarStopped": "Engine gestoppt",
+        "radarApi": "Cloud-Modell aktiv: ",
+        "toastStartingModel": "Modell wird in llama-server gestartet...",
+        "toastModelActivated": "Modell aktiviert!",
+        "toastModelStartError": "Fehler beim Starten des Modells: ",
+        "toastUnloadingModel": "Modell wird entladen und Speicher freigegeben (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ Modell erfolgreich aus dem Speicher entladen",
+        "toastModelUnloadError": "Fehler beim Entladen des Modells: ",
+        "toastSelectModelFirst": "Bitte wählen Sie ein Modell im Katalog zum Starten",
+        "toastApiModelInfo": "läuft über Cloud-API (kein VRAM-Verbrauch). Zum Wechseln Katalog öffnen.",
+        "toastModelDeleting": "Modell wird gelöscht...",
+        "toastModelDeleted": "✓ Modell erfolgreich von der Festplatte gelöscht",
+        "toastDeleteError": "Löschen fehlgeschlagen: ",
+        "deleteConfirm": "Möchten Sie das Modell wirklich löschen:\n\n\"{name}\" ({size} GB)?\n\nDie Datei wird dauerhaft gelöscht.",
+        "deleteModelActiveWarning": "\nWarnung: Dieses Modell ist derzeit aktiv. Die Inferenz wird entladen.",
+        "noInstalledModels": "Keine .gguf-Dateien gefunden.<br>Laden Sie ein ternäres Modell aus <b>\"Bonsai 2-Familie\"</b> herunter oder suchen Sie auf <b>Hugging Face</b>."
     },
     "fr": {
         "defaultUserName": "Utilisateur",
@@ -1048,7 +1123,7 @@
         "labelSpeed": "Vitesse d'inférence :",
         "unitTokensSec": "t/s",
         "btnDownload": "Télécharger",
-        "btnActivate": "Activer",
+        "btnActivate": "Lancer le moteur",
         "btnInstalled": "Installé",
         "installedEmpty": "Aucun fichier de modèle .gguf dans les dossiers de modèles.<br>Téléchargez un modèle ternaire depuis l'onglet <b>«Famille Bonsai 2»</b> ou cherchez sur <b>Hugging Face</b>.",
         "sredaBoostTitle": "SREDA Boost — Mode jeu pour les ressources",
@@ -1121,7 +1196,32 @@
         },
         "badgeCompatible": "Compatible",
         "badgeHighLoad": "Charge élevée",
-        "badgeExceedsRam": "Dépasse la RAM"
+        "badgeExceedsRam": "Dépasse la RAM",
+        "start": "Lancer",
+        "btnDelete": "Supprimer",
+        "btnDeleteTitle": "Supprimer le fichier du modèle du disque",
+        "modelNotSelected": "Aucun modèle sélectionné",
+        "engineRunningTooltip": "Modèle chargé en VRAM. Cliquez pour décharger et libérer la mémoire",
+        "engineStartingTooltip": "Initialisation de la VRAM et démarrage de llama-server...",
+        "engineStoppedTooltip": "Moteur arrêté. Cliquez pour charger le modèle en VRAM",
+        "radarReady": "Modèle prêt : ",
+        "radarStandby": "Moteur en attente (démarrage auto à l'envoi)",
+        "radarStopped": "Moteur arrêté",
+        "radarApi": "Modèle cloud actif : ",
+        "toastStartingModel": "Lancement du modèle dans llama-server...",
+        "toastModelActivated": "Modèle activé !",
+        "toastModelStartError": "Échec du lancement du modèle : ",
+        "toastUnloadingModel": "Déchargement du modèle et libération de la mémoire (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ Modèle déchargé de la mémoire avec succès",
+        "toastModelUnloadError": "Échec du déchargement du modèle : ",
+        "toastSelectModelFirst": "Veuillez sélectionner un modèle dans le catalogue",
+        "toastApiModelInfo": "fonctionne via l'API cloud (zéro VRAM). Ouvrez le catalogue pour changer.",
+        "toastModelDeleting": "Suppression du modèle...",
+        "toastModelDeleted": "✓ Modèle supprimé du disque avec succès",
+        "toastDeleteError": "Échec de la suppression : ",
+        "deleteConfirm": "Voulez-vous vraiment supprimer le modèle :\n\n\"{name}\" ({size} Go) ?\n\nLe fichier sera définitivement supprimé.",
+        "deleteModelActiveWarning": "\nAttention : ce modèle est actuellement actif. L'inférence sera déchargée.",
+        "noInstalledModels": "Aucun fichier .gguf trouvé.<br>Téléchargez un modèle ternaire depuis <b>« Famille Bonsai 2 »</b> ou recherchez sur <b>Hugging Face</b>."
     },
     "es": {
         "defaultUserName": "Usuario",
@@ -1252,7 +1352,7 @@
         "btnConfigureKeys": "Configurar claves",
         "apiModelsEmpty": "Aún no se han activado modelos de API en la nube. Habilite OpenRouter, Sber GigaChat o Custom API en Configuración.",
         "btnSelectModel": "Seleccionar modelo",
-        "btnModelSelected": "Seleccionado",
+        "btnModelSelected": "Seleccionada",
         "badgeRecommended": "Recomendado",
         "badgeActive": "Activo",
         "badgeLocal": "Local",
@@ -1261,7 +1361,7 @@
         "labelSpeed": "Velocidad de inferencia:",
         "unitTokensSec": "t/s",
         "btnDownload": "Descargar",
-        "btnActivate": "Activar",
+        "btnActivate": "Iniciar motor",
         "btnInstalled": "Instalado",
         "installedEmpty": "Aún no hay archivos .gguf en las carpetas de modelos.<br>Descargue un modelo ternario de <b>«Familia Bonsai 2»</b> o busque en <b>Hugging Face</b>.",
         "sredaBoostTitle": "SREDA Boost — Modo juego de recursos",
@@ -1334,7 +1434,32 @@
         },
         "badgeCompatible": "Compatible",
         "badgeHighLoad": "Carga alta",
-        "badgeExceedsRam": "Excede la RAM"
+        "badgeExceedsRam": "Excede la RAM",
+        "start": "Iniciar",
+        "btnDelete": "Eliminar",
+        "btnDeleteTitle": "Eliminar archivo del modelo del disco",
+        "modelNotSelected": "Ningún modelo seleccionado",
+        "engineRunningTooltip": "Modelo cargado en VRAM. Haga clic para descargar y liberar memoria",
+        "engineStartingTooltip": "Inicializando VRAM e iniciando llama-server...",
+        "engineStoppedTooltip": "El motor está detenido. Haga clic para cargar el modelo en VRAM",
+        "radarReady": "Modelo listo: ",
+        "radarStandby": "Motor en espera (inicio automático al enviar)",
+        "radarStopped": "Motor detenido",
+        "radarApi": "Modelo en la nube activo: ",
+        "toastStartingModel": "Iniciando modelo en llama-server...",
+        "toastModelActivated": "¡Modelo activado!",
+        "toastModelStartError": "Error al iniciar el modelo: ",
+        "toastUnloadingModel": "Descargando modelo y liberando memoria (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ Modelo descargado con éxito de la memoria",
+        "toastModelUnloadError": "Error al descargar el modelo: ",
+        "toastSelectModelFirst": "Por favor, seleccione un modelo en el catálogo para iniciar",
+        "toastApiModelInfo": "funciona vía API en la nube (cero VRAM). Abra el catálogo para cambiar.",
+        "toastModelDeleting": "Eliminando modelo...",
+        "toastModelDeleted": "✓ Modelo eliminado del disco con éxito",
+        "toastDeleteError": "Error al eliminar: ",
+        "deleteConfirm": "¿Está seguro de que desea eliminar el modelo:\n\n\"{name}\" ({size} GB)?\n\nEl archivo se eliminará permanentemente.",
+        "deleteModelActiveWarning": "\nAdvertencia: este modelo está activo actualmente. La inferencia se descargará de la memoria.",
+        "noInstalledModels": "No se encontraron archivos .gguf.<br>Descargue un modelo ternario de <b>«Familia Bonsai 2»</b> o busque en <b>Hugging Face</b>."
     },
     "pt": {
         "defaultUserName": "Usuário",
@@ -1474,7 +1599,7 @@
         "labelSpeed": "Velocidade de inferência:",
         "unitTokensSec": "t/s",
         "btnDownload": "Baixar",
-        "btnActivate": "Ativar",
+        "btnActivate": "Iniciar no motor",
         "btnInstalled": "Instalado",
         "installedEmpty": "Ainda não há arquivos de modelo .gguf nas pastas de modelos.<br>Baixe um modelo ternário na guia <b>«Família Bonsai 2»</b> ou encontre no <b>Hugging Face</b>.",
         "sredaBoostTitle": "SREDA Boost — Modo de jogo de recursos",
@@ -1547,7 +1672,32 @@
         },
         "badgeCompatible": "Compatível",
         "badgeHighLoad": "Carga alta",
-        "badgeExceedsRam": "Excede a RAM"
+        "badgeExceedsRam": "Excede a RAM",
+        "start": "Iniciar",
+        "btnDelete": "Excluir",
+        "btnDeleteTitle": "Excluir arquivo do modelo do disco",
+        "modelNotSelected": "Nenhum modelo selecionado",
+        "engineRunningTooltip": "Modelo carregado na VRAM. Clique para descarregar e liberar memória",
+        "engineStartingTooltip": "Inicializando VRAM e iniciando llama-server...",
+        "engineStoppedTooltip": "Motor parado. Clique para carregar o modelo na VRAM",
+        "radarReady": "Modelo pronto: ",
+        "radarStandby": "Motor em espera (início automático ao enviar)",
+        "radarStopped": "Motor parado",
+        "radarApi": "Modelo em nuvem ativo: ",
+        "toastStartingModel": "Iniciando modelo no llama-server...",
+        "toastModelActivated": "Modelo ativado!",
+        "toastModelStartError": "Erro ao iniciar o modelo: ",
+        "toastUnloadingModel": "Descarregando modelo e liberando memória (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ Modelo descarregado com sucesso da memória",
+        "toastModelUnloadError": "Erro ao descarregar o modelo: ",
+        "toastSelectModelFirst": "Selecione um modelo no catálogo para iniciar",
+        "toastApiModelInfo": "roda via API em nuvem (zero VRAM). Abra o catálogo para alternar.",
+        "toastModelDeleting": "Excluindo modelo...",
+        "toastModelDeleted": "✓ Modelo excluído do disco com sucesso",
+        "toastDeleteError": "Erro ao excluir: ",
+        "deleteConfirm": "Tem certeza de que deseja excluir o modelo:\n\n\"{name}\" ({size} GB)?\n\nO arquivo será excluído permanentemente.",
+        "deleteModelActiveWarning": "\nAviso: este modelo está ativo no momento. A inferência será descarregada da memória.",
+        "noInstalledModels": "Nenhum arquivo .gguf encontrado.<br>Baixe um modelo ternário de <b>«Família Bonsai 2»</b> ou pesquise no <b>Hugging Face</b>."
     },
     "it": {
         "defaultUserName": "Utente",
@@ -1685,7 +1835,7 @@
         "labelSpeed": "Velocità di inferenza:",
         "unitTokensSec": "t/s",
         "btnDownload": "Scarica",
-        "btnActivate": "Attiva",
+        "btnActivate": "Avvia nel motore",
         "btnInstalled": "Installato",
         "installedEmpty": "Nessun file di modello .gguf ancora presente nelle cartelle.<br>Scarica un modello ternario dalla scheda <b>«Famiglia Bonsai 2»</b> o cerca su <b>Hugging Face</b>.",
         "sredaBoostTitle": "SREDA Boost — Modalità gioco per le risorse",
@@ -1758,7 +1908,32 @@
         },
         "badgeCompatible": "Compatibile",
         "badgeHighLoad": "Carico elevato",
-        "badgeExceedsRam": "Supera la RAM"
+        "badgeExceedsRam": "Supera la RAM",
+        "start": "Avvia",
+        "btnDelete": "Elimina",
+        "btnDeleteTitle": "Elimina file del modello dal disco",
+        "modelNotSelected": "Nessun modello selezionato",
+        "engineRunningTooltip": "Modello caricato in VRAM. Fai clic per scaricare e liberare memoria",
+        "engineStartingTooltip": "Inizializzazione VRAM e avvio di llama-server...",
+        "engineStoppedTooltip": "Motore arrestato. Fai clic per caricare il modello in VRAM",
+        "radarReady": "Modello pronto: ",
+        "radarStandby": "Motore in standby (avvio automatico all'invio)",
+        "radarStopped": "Motore arrestato",
+        "radarApi": "Modello cloud attivo: ",
+        "toastStartingModel": "Avvio del modello in llama-server...",
+        "toastModelActivated": "Modello attivato!",
+        "toastModelStartError": "Errore durante l'avvio del modello: ",
+        "toastUnloadingModel": "Scaricamento del modello e liberazione della memoria (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ Modello scaricato con successo dalla memoria",
+        "toastModelUnloadError": "Errore durante lo scaricamento del modello: ",
+        "toastSelectModelFirst": "Seleziona un modello nel catalogo per avviarlo",
+        "toastApiModelInfo": "funziona via API cloud (zero VRAM). Apri il catalogo per cambiare.",
+        "toastModelDeleting": "Eliminazione del modello...",
+        "toastModelDeleted": "✓ Modello eliminato dal disco con successo",
+        "toastDeleteError": "Errore di eliminazione: ",
+        "deleteConfirm": "Sei sicuro di voler eliminare il modello:\n\n\"{name}\" ({size} GB)?\n\nIl file verrà eliminato definitivamente.",
+        "deleteModelActiveWarning": "\nAttenzione: questo modello è attualmente attivo. L'inferenza verrà scaricata dalla memoria.",
+        "noInstalledModels": "Nessun file .gguf trovato.<br>Scarica un modello ternario da <b>«Famiglia Bonsai 2»</b> o cerca su <b>Hugging Face</b>."
     },
     "ja": {
         "defaultUserName": "ユーザー",
@@ -1898,7 +2073,7 @@
         "labelSpeed": "推論速度:",
         "unitTokensSec": "t/s",
         "btnDownload": "ダウンロード",
-        "btnActivate": "アクティブ化",
+        "btnActivate": "エンジンで起動",
         "btnInstalled": "インストール済み",
         "installedEmpty": "モデルフォルダに.ggufファイルがまだありません。<br><b>「Bonsai 2ファミリー」</b>タブから三値モデルをダウンロードするか、<b>Hugging Face</b>で検索してください。",
         "sredaBoostTitle": "SREDA Boost — ゲームモードリソース最適化",
@@ -1971,7 +2146,32 @@
         },
         "badgeCompatible": "互換性あり",
         "badgeHighLoad": "高負荷",
-        "badgeExceedsRam": "RAM超過"
+        "badgeExceedsRam": "RAM超過",
+        "start": "起動",
+        "btnDelete": "削除",
+        "btnDeleteTitle": "モデルファイルをディスクから削除",
+        "modelNotSelected": "モデル未選択",
+        "engineRunningTooltip": "VRAMにモデルが読み込まれました。クリックしてアンロードしメモリを解放",
+        "engineStartingTooltip": "VRAM初期化とllama-serverの起動中...",
+        "engineStoppedTooltip": "エンジンは停止しています。クリックしてVRAMにモデルを起動",
+        "radarReady": "モデル準備完了: ",
+        "radarStandby": "エンジン待機中（送信時に自動起動）",
+        "radarStopped": "エンジン停止",
+        "radarApi": "クラウドモデルアクティブ: ",
+        "toastStartingModel": "llama-serverでモデルを起動中...",
+        "toastModelActivated": "モデルがアクティブ化されました！",
+        "toastModelStartError": "モデルの起動エラー: ",
+        "toastUnloadingModel": "モデルのアンロードとメモリ解放中 (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ モデルがメモリから正常にアンロードされました",
+        "toastModelUnloadError": "モデルのアンロードエラー: ",
+        "toastSelectModelFirst": "カタログから起動するモデルを選択してください",
+        "toastApiModelInfo": "クラウドAPI経由で動作（VRAM消費ゼロ）。切り替えはカタログを開いてください。",
+        "toastModelDeleting": "モデルを削除中...",
+        "toastModelDeleted": "✓ モデルがディスクから正常に削除されました",
+        "toastDeleteError": "削除エラー: ",
+        "deleteConfirm": "モデルを削除してもよろしいですか:\n\n\"{name}\" ({size} GB)?\n\nファイルはディスクから完全に削除されます。",
+        "deleteModelActiveWarning": "\n警告: このモデルは現在アクティブです。推論エンジンはメモリからアンロードされます。",
+        "noInstalledModels": ".ggufファイルが見つかりません。<br><b>「Bonsai 2ファミリー」</b>からダウンロードするか、<b>Hugging Face</b>で検索してください。"
     },
     "ko": {
         "defaultUserName": "사용자",
@@ -2109,7 +2309,7 @@
         "labelSpeed": "추론 속도:",
         "unitTokensSec": "t/s",
         "btnDownload": "다운로드",
-        "btnActivate": "활성화",
+        "btnActivate": "엔진에서 시작",
         "btnInstalled": "설치됨",
         "installedEmpty": "모델 폴더에 아직 .gguf 모델 파일이 없습니다.<br><b>«Bonsai 2 제품군»</b> 탭에서 3진 모델을 다운로드하거나 <b>Hugging Face</b>에서 검색하세요.",
         "sredaBoostTitle": "SREDA Boost — 게임 모드 리소스 최적화",
@@ -2182,7 +2382,32 @@
         },
         "badgeCompatible": "호환됨",
         "badgeHighLoad": "높은 부하",
-        "badgeExceedsRam": "RAM 초과"
+        "badgeExceedsRam": "RAM 초과",
+        "start": "시작",
+        "btnDelete": "삭제",
+        "btnDeleteTitle": "디스크에서 모델 파일 삭제",
+        "modelNotSelected": "선택된 모델 없음",
+        "engineRunningTooltip": "VRAM에 모델이 로드되었습니다. 메모리를 확보하려면 언로드하세요",
+        "engineStartingTooltip": "VRAM 초기화 및 llama-server 시작 중...",
+        "engineStoppedTooltip": "엔진이 정지되었습니다. 클릭하여 VRAM에서 모델을 시작하세요",
+        "radarReady": "모델 준비 완료: ",
+        "radarStandby": "엔진 대기 중 (질문 입력 시 자동 시작)",
+        "radarStopped": "엔진 중지됨",
+        "radarApi": "클라우드 모델 활성: ",
+        "toastStartingModel": "llama-server에서 모델을 시작하는 중...",
+        "toastModelActivated": "모델이 활성화되었습니다!",
+        "toastModelStartError": "모델 시작 오류: ",
+        "toastUnloadingModel": "모델 언로드 및 메모리 확보 중 (RAM/VRAM)...",
+        "toastModelUnloaded": "✓ 모델이 메모리에서 성공적으로 언로드되었습니다",
+        "toastModelUnloadError": "모델 언로드 오류: ",
+        "toastSelectModelFirst": "시작할 모델을 카탈로그에서 선택하세요",
+        "toastApiModelInfo": "클라우드 API를 통해 작동합니다 (VRAM 사용 없음). 변경하려면 카탈로그를 여세요.",
+        "toastModelDeleting": "모델 삭제 중...",
+        "toastModelDeleted": "✓ 모델이 디스크에서 성공적으로 삭제되었습니다",
+        "toastDeleteError": "삭제 오류: ",
+        "deleteConfirm": "모델을 삭제하시겠습니까:\n\n\"{name}\" ({size} GB)?\n\n파일이 디스크에서 영구적으로 삭제됩니다.",
+        "deleteModelActiveWarning": "\n경고: 이 모델은 현재 활성 상태입니다. 인퍼런스가 메모리에서 언로드됩니다.",
+        "noInstalledModels": ".gguf 모델 파일이 없습니다.<br><b>«Bonsai 2 패밀리»</b>에서 다운로드하거나 <b>Hugging Face</b>에서 검색하세요."
     }
 };
 
@@ -2259,8 +2484,38 @@
 
     // Header
     setNodeText(dom.btnToggleAutoTts, dict.autoTts);
-    if (dom.engineBtnText) {
-      dom.engineBtnText.textContent = state.isEngineAlive ? (dict.unload || 'Выгрузить') : (dict.load || 'Загрузить');
+    if (dom.btnToggleEngine) {
+      if (state.isApiModel) {
+        dom.btnToggleEngine.className = 'header-pill-btn header-pill-engine api-ready';
+        dom.btnToggleEngine.innerHTML = `<i class="fa-solid fa-cloud" style="color: #10B981;"></i> <span>${dict.apiReady || 'API Ready'}</span>`;
+        dom.btnToggleEngine.title = dict.tooltipApiReady || 'Cloud model active';
+      } else if (state.isEngineAlive) {
+        dom.btnToggleEngine.className = 'header-pill-btn header-pill-engine running';
+        dom.btnToggleEngine.innerHTML = `<i class="fa-solid fa-power-off"></i> <span id="engine-btn-text">${dict.unload || 'Выгрузить'}</span>`;
+        dom.btnToggleEngine.title = dict.engineRunningTooltip || 'Модель загружена в VRAM. Нажмите, чтобы остановить инференс и освободить память';
+      } else {
+        dom.btnToggleEngine.className = 'header-pill-btn header-pill-engine';
+        dom.btnToggleEngine.innerHTML = `<i class="fa-solid fa-play"></i> <span id="engine-btn-text">${dict.start || dict.load || 'Запустить'}</span>`;
+        dom.btnToggleEngine.title = dict.engineStoppedTooltip || 'Движок выгружен. Нажмите, чтобы запустить модель в VRAM';
+      }
+    }
+    if (dom.radarContainer) {
+      if (state.isApiModel) {
+        dom.radarContainer.title = `${dict.radarApi || 'Облачная модель активна: '}${state.activeModelName} (VRAM 0 MB)`;
+      } else if (state.isEngineAlive) {
+        dom.radarContainer.title = `${dict.radarReady || 'Модель готова: '}${state.activeModelName}`;
+      } else {
+        dom.radarContainer.title = dict.radarStopped || 'Движок остановлен';
+      }
+    }
+    if (dom.activeModelBadge) {
+      if (state.isApiModel) {
+        dom.activeModelBadge.className = 'badge-model-api';
+        dom.activeModelBadge.textContent = dict.badgeCloudApi || 'API / Облако';
+      } else {
+        dom.activeModelBadge.className = 'badge-model-local';
+        dom.activeModelBadge.textContent = dict.badgeLocal || 'Локальная';
+      }
     }
 
     // Default chat title in header
@@ -2320,6 +2575,8 @@
     setNodeText(dom.btnRefreshModels, dict.btnRefresh);
     setNodeText(dom.btnOpenFolder, dict.btnOpenFolder);
     setNodeText('#modal-models .modal-footer .btn-close-modal', dict.btnClose);
+    if (typeof loadInstalledModels === 'function') loadInstalledModels();
+    if (typeof loadBonsaiCatalog === 'function') loadBonsaiCatalog();
 
     // User Profile Modal
     setNodeText('#modal-profile .modal-title span', dict.modalProfileTitle);
@@ -2510,15 +2767,10 @@
         if (savedModelPath.startsWith('api:')) {
           state.isApiModel = true;
           if (dom.activeModelName) dom.activeModelName.textContent = state.activeModelName;
-          if (dom.modelChipIcon) {
-            if (savedModelPath.startsWith('api:gigachat:')) {
-              dom.modelChipIcon.className = '';
-              dom.modelChipIcon.innerHTML = '<span style="display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 17px; border-radius: 4px; background: rgba(16, 185, 129, 0.22); border: 1px solid #10B981; font-size: 11.5px; font-weight: 900; color: #10B981; line-height: 1; vertical-align: middle; box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);">G</span>';
-            } else {
-              dom.modelChipIcon.innerHTML = '';
-              dom.modelChipIcon.className = 'fa-solid fa-cloud';
-              dom.modelChipIcon.style.color = '#10B981';
-            }
+          if (savedModelPath.startsWith('api:gigachat:')) {
+            updateModelChipIcon('gigachat');
+          } else {
+            updateModelChipIcon('api');
           }
           if (dom.activeModelBadge) {
             dom.activeModelBadge.className = 'badge-model-api';
@@ -5214,21 +5466,34 @@
     }
   }
 
+  function updateModelChipIcon(mode) {
+    if (!dom.modelChipIcon) return;
+    dom.modelChipIcon.className = 'model-chip-icon';
+    if (mode === 'gigachat') {
+      dom.modelChipIcon.innerHTML = '<span style="display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 17px; border-radius: 4px; background: rgba(16, 185, 129, 0.22); border: 1px solid #10B981; font-size: 11px; font-weight: 900; color: #10B981; line-height: 1; vertical-align: middle; box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);">G</span>';
+    } else if (mode === 'api') {
+      dom.modelChipIcon.innerHTML = '<i class="fa-solid fa-cloud" style="color: #10B981; font-size: 13px;"></i>';
+    } else {
+      dom.modelChipIcon.innerHTML = '<i class="fa-solid fa-microchip" style="color: var(--accent-red); font-size: 13px;"></i>';
+    }
+  }
+
   function setEngineIndicator(status, modelPath) {
+    if (modelPath !== undefined && modelPath !== null) {
+      state.activeModelPath = modelPath;
+      state.isApiModel = (typeof modelPath === 'string' && modelPath.startsWith('api:'));
+    }
+    const dict = I18N[state.settings.language || 'ru'] || I18N.ru;
+
     // If API model is active, radar is ALWAYS green and ready without VRAM
     if (state.isApiModel || (state.activeModelPath && state.activeModelPath.startsWith('api:'))) {
       state.isApiModel = true;
       state.isEngineAlive = true;
 
-      if (dom.modelChipIcon) {
-        if (state.activeModelPath && state.activeModelPath.startsWith('api:gigachat:')) {
-          dom.modelChipIcon.className = '';
-          dom.modelChipIcon.innerHTML = '<span style="display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 17px; border-radius: 4px; background: rgba(16, 185, 129, 0.22); border: 1px solid #10B981; font-size: 11.5px; font-weight: 900; color: #10B981; line-height: 1; vertical-align: middle; box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);">G</span>';
-        } else {
-          dom.modelChipIcon.innerHTML = '';
-          dom.modelChipIcon.className = 'fa-solid fa-cloud';
-          dom.modelChipIcon.style.color = '#10B981';
-        }
+      if (state.activeModelPath && state.activeModelPath.startsWith('api:gigachat:')) {
+        updateModelChipIcon('gigachat');
+      } else {
+        updateModelChipIcon('api');
       }
       const dict = I18N[state.settings.language || 'ru'] || I18N.ru;
       if (dom.activeModelBadge) {
@@ -5250,7 +5515,7 @@
           wave.style.borderColor = 'var(--accent-green)';
           wave.style.display = 'block';
         }
-        dom.radarContainer.title = `Облачная модель активна: ${state.activeModelName} (VRAM свободен)`;
+        dom.radarContainer.title = `${dict.radarApi || 'Облачная модель активна: '}${state.activeModelName} (VRAM 0 MB)`;
       }
       return;
     }
@@ -5258,11 +5523,7 @@
     state.isApiModel = false;
     state.isEngineAlive = (status === 'ready');
 
-    if (dom.modelChipIcon) {
-      dom.modelChipIcon.innerHTML = '';
-      dom.modelChipIcon.className = 'fa-solid fa-microchip';
-      dom.modelChipIcon.style.color = 'var(--accent-red)';
-    }
+    updateModelChipIcon('local');
     const dictLocal = I18N[state.settings.language || 'ru'] || I18N.ru;
     if (dom.activeModelBadge) {
       dom.activeModelBadge.className = 'badge-model-local';
@@ -5276,20 +5537,21 @@
       if (dom.activeModelName) dom.activeModelName.textContent = name;
     }
 
+    const dictEngine = I18N[state.settings.language || 'ru'] || I18N.ru;
     // Update Header Engine Start/Stop Button
     if (dom.btnToggleEngine) {
       if (status === 'ready') {
         dom.btnToggleEngine.className = 'header-pill-btn header-pill-engine running';
-        dom.btnToggleEngine.innerHTML = '<i class="fa-solid fa-power-off"></i> <span id="engine-btn-text">Выгрузить</span>';
-        dom.btnToggleEngine.title = 'Модель загружена в VRAM. Нажмите, чтобы остановить инференс и освободить память';
+        dom.btnToggleEngine.innerHTML = `<i class="fa-solid fa-power-off"></i> <span id="engine-btn-text">${dictEngine.unload || 'Выгрузить'}</span>`;
+        dom.btnToggleEngine.title = dictEngine.engineRunningTooltip || 'Модель загружена в VRAM. Нажмите, чтобы остановить инференс и освободить память';
       } else if (status === 'starting') {
         dom.btnToggleEngine.className = 'header-pill-btn header-pill-engine loading';
-        dom.btnToggleEngine.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span id="engine-btn-text">Запуск...</span>';
-        dom.btnToggleEngine.title = 'Инициализация VRAM и запуск llama-server...';
+        dom.btnToggleEngine.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span id="engine-btn-text">${dictEngine.starting || 'Запуск...'}</span>`;
+        dom.btnToggleEngine.title = dictEngine.engineStartingTooltip || 'Инициализация VRAM и запуск llama-server...';
       } else {
         dom.btnToggleEngine.className = 'header-pill-btn header-pill-engine';
-        dom.btnToggleEngine.innerHTML = '<i class="fa-solid fa-play"></i> <span id="engine-btn-text">Запустить</span>';
-        dom.btnToggleEngine.title = 'Движок выгружен. Нажмите, чтобы запустить модель в VRAM';
+        dom.btnToggleEngine.innerHTML = `<i class="fa-solid fa-play"></i> <span id="engine-btn-text">${dictEngine.start || dictEngine.load || 'Запустить'}</span>`;
+        dom.btnToggleEngine.title = dictEngine.engineStoppedTooltip || 'Движок выгружен. Нажмите, чтобы запустить модель в VRAM';
       }
     }
 
@@ -5303,40 +5565,41 @@
         wave.style.borderColor = 'var(--accent-green)';
         wave.style.display = 'block';
       }
-      dom.radarContainer.title = `Модель готова: ${state.activeModelName}`;
+      dom.radarContainer.title = `${dictEngine.radarReady || 'Модель готова: '}${state.activeModelName}`;
     } else if (status === 'standby') {
       if (core) core.style.backgroundColor = 'var(--accent-yellow)';
       if (wave) wave.style.display = 'none';
-      dom.radarContainer.title = 'Движок ожидает запрос (автозапуск при отправке)';
+      dom.radarContainer.title = dictEngine.radarStandby || 'Движок ожидает запрос (автозапуск при отправке)';
     } else {
       if (core) core.style.backgroundColor = 'var(--accent-red)';
       if (wave) wave.style.display = 'none';
-      dom.radarContainer.title = 'Движок остановлен';
+      dom.radarContainer.title = dictEngine.radarStopped || 'Движок остановлен';
     }
   }
 
   async function toggleEngine() {
+    const dict = I18N[state.settings.language || 'ru'] || I18N.ru;
     if (state.isApiModel) {
-      showToast(`Модель ${state.activeModelName} работает через API (без расхода VRAM). Для смены откройте Каталог.`, 'info');
+      showToast(`${state.activeModelName}: ${dict.toastApiModelInfo || 'работает через API (без расхода VRAM). Для смены откройте Каталог.'}`, 'info');
       openModal('modal-models');
       return;
     }
     if (state.isEngineAlive) {
-      showToast('Выгрузка модели и освобождение памяти (RAM/VRAM)...', 'info');
+      showToast(dict.toastUnloadingModel || 'Выгрузка модели и освобождение памяти (RAM/VRAM)...', 'info');
       try {
         await fetch('/api/engine/stop', { method: 'POST' });
-        showToast('✓ Модель успешно выгружена из памяти', 'success');
+        showToast(dict.toastModelUnloaded || '✓ Модель успешно выгружена из памяти', 'success');
         fetchBoostStatus();
         fetchSystemInfo();
         checkEngineStatus();
         loadInstalledModels();
         loadBonsaiCatalog();
       } catch (e) {
-        showToast('Ошибка выгрузки модели: ' + e.message, 'error');
+        showToast((dict.toastModelUnloadError || 'Ошибка выгрузки модели: ') + e.message, 'error');
       }
     } else {
       if (!state.activeModelPath) {
-        showToast('Выберите модель в каталоге для запуска', 'warning');
+        showToast(dict.toastSelectModelFirst || 'Выберите модель в каталоге для запуска', 'warning');
         openModal('modal-models');
         return;
       }
@@ -5550,15 +5813,10 @@
     localStorage.setItem('sreda_active_model_name', m.name);
 
     if (dom.activeModelName) dom.activeModelName.textContent = m.name;
-    if (dom.modelChipIcon) {
-      if ((m.provider === 'gigachat') || (m.id && m.id.startsWith('api:gigachat:'))) {
-        dom.modelChipIcon.className = '';
-        dom.modelChipIcon.innerHTML = '<span style="display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 17px; border-radius: 4px; background: rgba(16, 185, 129, 0.22); border: 1px solid #10B981; font-size: 11.5px; font-weight: 900; color: #10B981; line-height: 1; vertical-align: middle; box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);">G</span>';
-      } else {
-        dom.modelChipIcon.innerHTML = '';
-        dom.modelChipIcon.className = 'fa-solid fa-cloud';
-        dom.modelChipIcon.style.color = '#10B981';
-      }
+    if ((m.provider === 'gigachat') || (m.id && m.id.startsWith('api:gigachat:'))) {
+      updateModelChipIcon('gigachat');
+    } else {
+      updateModelChipIcon('api');
     }
     if (dom.activeModelBadge) {
       dom.activeModelBadge.className = 'badge-model-api';
@@ -5761,8 +6019,8 @@
 
         const delBtn = document.createElement('button');
         delBtn.className = 'model-btn-delete';
-        delBtn.innerHTML = '<i class="fa-solid fa-trash-can"></i> Удалить';
-        delBtn.title = `Удалить файл модели (${m.size_gb} ГБ) с диска`;
+        delBtn.innerHTML = `<i class="fa-solid fa-trash-can"></i> ${dictInst.btnDelete || 'Удалить'}`;
+        delBtn.title = (dictInst.btnDeleteTitle || 'Удалить файл модели с диска') + ` (${m.size_gb} GB)`;
         delBtn.onclick = (e) => {
           e.stopPropagation();
           deleteInstalledModel(m);
@@ -5780,6 +6038,7 @@
         state.activeModelPath = preferred.path;
         state.activeModelName = preferred.name;
         if (dom.activeModelName) dom.activeModelName.textContent = preferred.name;
+        updateModelChipIcon('local');
       }
     } catch (e) {
       console.warn('Failed to load local models:', e);
@@ -5787,12 +6046,15 @@
   }
 
   async function deleteInstalledModel(m) {
+    const dictDel = I18N[state.settings.language || 'ru'] || I18N.ru;
     const isCurrent = (m.path === state.activeModelPath);
-    const warning = isCurrent ? '\nВнимание: эта модель сейчас активна. Инференс будет выгружен из памяти.' : '';
-    const confirmed = window.confirm(`Вы действительно хотите удалить модель:\n\n"${m.name}" (${m.size_gb} ГБ)?${warning}\n\nФайл будет удален с диска безвозвратно.`);
+    const warning = isCurrent ? (dictDel.deleteModelActiveWarning || '\nВнимание: эта модель сейчас активна. Инференс будет выгружен из памяти.') : '';
+    const confirmTemplate = dictDel.deleteConfirm || 'Вы действительно хотите удалить модель:\n\n"{name}" ({size} ГБ)?\n\nФайл будет удален с диска безвозвратно.';
+    const confirmMsg = confirmTemplate.replace('{name}', m.name).replace('{size}', m.size_gb) + warning;
+    const confirmed = window.confirm(confirmMsg);
     if (!confirmed) return;
 
-    showToast(`Удаление модели ${m.name}...`, 'info');
+    showToast(dictDel.toastModelDeleting || `Удаление модели ${m.name}...`, 'info');
     try {
       const res = await fetch('/api/models/delete', {
         method: 'POST',
@@ -5801,17 +6063,17 @@
       });
       const data = await res.json();
       if (data.success) {
-        showToast(`✓ Модель ${m.name} успешно удалена с диска`, 'success');
+        showToast(dictDel.toastModelDeleted || `✓ Модель ${m.name} успешно удалена с диска`, 'success');
         if (isCurrent) {
           state.activeModelPath = '';
-          state.activeModelName = 'Модель не выбрана';
-          if (dom.activeModelName) dom.activeModelName.textContent = 'Модель не выбрана';
+          state.activeModelName = dictDel.modelNotSelected || 'Модель не выбрана';
+          if (dom.activeModelName) dom.activeModelName.textContent = state.activeModelName;
           setEngineIndicator('offline', '');
         }
         await loadInstalledModels();
         await loadBonsaiCatalog();
       } else {
-        showToast('Ошибка удаления: ' + (data.error || 'неизвестно'), 'error');
+        showToast((dictDel.toastDeleteError || 'Ошибка удаления: ') + (data.error || 'неизвестно'), 'error');
       }
     } catch (e) {
       showToast('Ошибка связи с сервером при удалении модели', 'error');
@@ -5820,12 +6082,9 @@
 
   async function activateModel(path) {
     state.isApiModel = false;
-    if (dom.modelChipIcon) {
-      dom.modelChipIcon.innerHTML = '';
-      dom.modelChipIcon.className = 'fa-solid fa-microchip';
-      dom.modelChipIcon.style.color = 'var(--accent-red)';
-    }
-    showToast(`Запуск модели в llama-server (Radeon 780M Vulkan)...`, 'info');
+    updateModelChipIcon('local');
+    const dictAct = I18N[state.settings.language || 'ru'] || I18N.ru;
+    showToast(dictAct.toastStartingModel || `Запуск модели в llama-server...`, 'info');
     try {
       const res = await fetch('/api/engine/start', {
         method: 'POST',
@@ -5855,14 +6114,14 @@
             boostMsg = ` | ⚡ Boost: освобождено ${freed} МБ ОЗУ!`;
           }
         }
-        showToast(`✓ Модель ${state.activeModelName} активирована!${boostMsg}`, 'success');
+        showToast(`✓ ${state.activeModelName}: ${dictAct.toastModelActivated || 'Модель активирована!'}${boostMsg}`, 'success');
         fetchBoostStatus();
         fetchSystemInfo();
         closeModal('modal-models');
         loadInstalledModels();
         loadBonsaiCatalog();
       } else {
-        showToast(`Ошибка запуска модели: ${data.message}`, 'error');
+        showToast((dictAct.toastModelStartError || 'Ошибка запуска модели: ') + data.message, 'error');
       }
     } catch (e) {
       showToast(`Сетевая ошибка: ${e.message}`, 'error');
@@ -5952,17 +6211,26 @@
         fileRow.style.borderBottom = '1px solid var(--border)';
 
         const dict = I18N[state.settings.language || 'ru'] || I18N.ru;
-        const displaySize = f.size_text || (f.size_gb ? (f.size_gb + ' ГБ') : (f.size_bytes ? ((f.size_bytes / (1024*1024*1024)).toFixed(2) + ' ГБ') : ''));
+        let displaySize = '';
+        if (f.size_text && typeof f.size_text === 'string' && f.size_text.trim() && !f.size_text.includes('undefined')) {
+          displaySize = f.size_text;
+        } else if (typeof f.size_gb === 'number' && !isNaN(f.size_gb) && f.size_gb > 0) {
+          displaySize = `${f.size_gb} ГБ`;
+        } else if (typeof f.size_bytes === 'number' && !isNaN(f.size_bytes) && f.size_bytes > 0) {
+          displaySize = `${(f.size_bytes / (1024*1024*1024)).toFixed(2)} ГБ`;
+        }
+        const sizeLabel = displaySize ? ` (${displaySize})` : '';
+
         const isRecommended = (f.compatibility === 'recommended') || (f.is_compatible === true && f.compatibility !== 'warning' && f.compatibility !== 'not_recommended');
         const isWarning = (f.compatibility === 'warning');
 
         let compatBadge = '';
         if (isRecommended) {
-          compatBadge = `<span style="font-size: 10px; padding: 2px 6px; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--accent-green); color: var(--accent-green); border-radius: 4px; font-weight: bold;">✓ ${dict.badgeCompatible || 'Совместимо'} (${displaySize})</span>`;
+          compatBadge = `<span style="font-size: 10px; padding: 2px 6px; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--accent-green); color: var(--accent-green); border-radius: 4px; font-weight: bold;">✓ ${dict.badgeCompatible || 'Совместимо'}${sizeLabel}</span>`;
         } else if (isWarning) {
-          compatBadge = `<span style="font-size: 10px; padding: 2px 6px; background: rgba(245, 158, 11, 0.15); border: 1px solid #f59e0b; color: #f59e0b; border-radius: 4px; font-weight: bold;">⚠ ${dict.badgeHighLoad || 'Высокая нагрузка'} (${displaySize})</span>`;
+          compatBadge = `<span style="font-size: 10px; padding: 2px 6px; background: rgba(245, 158, 11, 0.15); border: 1px solid #f59e0b; color: #f59e0b; border-radius: 4px; font-weight: bold;">⚠ ${dict.badgeHighLoad || 'Высокая нагрузка'}${sizeLabel}</span>`;
         } else {
-          compatBadge = `<span style="font-size: 10px; padding: 2px 6px; background: rgba(239, 68, 68, 0.15); border: 1px solid var(--accent-red); color: var(--accent-red); border-radius: 4px; font-weight: bold;">⚠ ${dict.badgeExceedsRam || 'Превышает RAM'} (${displaySize})</span>`;
+          compatBadge = `<span style="font-size: 10px; padding: 2px 6px; background: rgba(239, 68, 68, 0.15); border: 1px solid var(--accent-red); color: var(--accent-red); border-radius: 4px; font-weight: bold;">⚠ ${dict.badgeExceedsRam || 'Превышает RAM'}${sizeLabel}</span>`;
         }
 
         fileRow.innerHTML = `
@@ -5978,7 +6246,7 @@
         dlBtn.style.fontSize = '11px';
         dlBtn.style.flexShrink = '0';
         dlBtn.style.whiteSpace = 'nowrap';
-        dlBtn.innerHTML = `<i class="fa-solid fa-download"></i> Скачать`;
+        dlBtn.innerHTML = `<i class="fa-solid fa-download"></i> ${dict.btnDownload || "Скачать"}`;
         dlBtn.onclick = () => downloadModel(f.download_url, f.filename);
 
         fileRow.appendChild(dlBtn);
