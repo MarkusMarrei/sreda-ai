@@ -1,0 +1,70 @@
+# ==============================================================================
+# SREDA AI — Git Ignore Policy
+# Excludes heavy neural network weights, temporary artifacts, and credentials.
+# ==============================================================================
+
+# Python Caches & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+env/
+venv/
+venv_audio/
+*.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Neural Network Model Weights (>100MB, fetched on demand)
+*.gguf
+*.onnx
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.msgpack
+
+# Allow model metadata and configurations to remain in repository
+!models/**/.gitkeep
+!models/**/*.json
+!models/**/vocab.json
+!models/**/merges.txt
+!models/**/spiece.model
+
+# Included lightweight built-in models (<100MB for speech recognition & TTS voice ready out of the box)
+!models/audio/whisper/ggml-tiny.bin
+!models/audio/piper/**/*.onnx
+
+# Audio & Image Generated Artifacts and User Tests
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.png
+*.jpg
+*.jpeg
+!frontend/assets/**
+!frontend/favicon.ico
+!reference_logo.png
+
+# User Credentials & Private Configuration
+# (Use backend/config/providers.json.example as template)
+backend/config/providers.json
+
+# Logs, Diagnostics & Temp files
+*.log
+*.tmp
+llama_server.log
+_sc_*.vbs
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+.idea/
+.vscode/
+*.swp
+*~

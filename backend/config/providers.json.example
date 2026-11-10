@@ -1,0 +1,72 @@
+{
+  "openrouter": {
+    "enabled": false,
+    "api_key": "",
+    "model": "deepseek/deepseek-chat",
+    "available_models": [
+      {
+        "id": "deepseek/deepseek-chat",
+        "name": "DeepSeek V3 (Chat)"
+      },
+      {
+        "id": "deepseek/deepseek-r1",
+        "name": "DeepSeek R1 (Reasoning)"
+      },
+      {
+        "id": "anthropic/claude-3.5-sonnet",
+        "name": "Claude 3.5 Sonnet"
+      },
+      {
+        "id": "meta-llama/llama-3.3-70b-instruct",
+        "name": "Llama 3.3 70B Instruct"
+      },
+      {
+        "id": "google/gemini-2.0-flash-exp:free",
+        "name": "Gemini 2.0 Flash (Free)"
+      },
+      {
+        "id": "openai/gpt-4o",
+        "name": "GPT-4o (OpenAI)"
+      }
+    ]
+  },
+  "gigachat": {
+    "enabled": false,
+    "client_id": "",
+    "client_secret": "",
+    "auth_key": "",
+    "scope": "GIGACHAT_API_PERS",
+    "model": "GigaChat-2",
+    "available_models": [
+      {
+        "id": "GigaChat-2-Max",
+        "name": "GigaChat 2 Max (Флагман Сбера)"
+      },
+      {
+        "id": "GigaChat-2-Pro",
+        "name": "GigaChat 2 Pro (Аналитика и код)"
+      },
+      {
+        "id": "GigaChat-2",
+        "name": "GigaChat 2 (Базовая модель)"
+      },
+      {
+        "id": "GigaChat",
+        "name": "GigaChat 1.x (Классическая)"
+      }
+    ]
+  },
+  "custom": {
+    "enabled": false,
+    "name": "Пользовательский API (OpenAI Compatible)",
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key": "",
+    "model": "deepseek-chat",
+    "available_models": [
+      {
+        "id": "deepseek-chat",
+        "name": "deepseek-chat"
+      }
+    ]
+  }
+}
